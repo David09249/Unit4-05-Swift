@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Diff</key>
+	<array>
+		<dict>
+			<key>ModifiedContent</key>
+			<string>// Created by: David Wang
+// Created on: Nov-2017
+// Created for: ICS3U
+// Daily Assignment - Unit4-05
+// This program displays the volume of a cylinder, given radius and height
+
+// constants
+var PI = Float(3.14)
+
+// this function uses the radius and height to calculate the volume
+func calculate_volume (userHeight: Float, userRadius: Float) {
+    // process
+    let userVolume = (PI * (userRadius*userRadius) * userHeight)
+    show ("The volume of the cylinder is: " + String(userVolume) + "cm^3")
+}
+
+// output
+show("Enter the height of the cylinder in cm")
+let heightString = ask("Enter height")
+let heightInt = Int(heightString)
+show("Enter the radius of the cylinder in cm")
+let radiusString = ask("Enter radius")
+let radiusInt = Int(radiusString)
+
+calculate_volume(userHeight: Float(heightInt!), userRadius: Float(radiusInt!))
+
+</string>
+			<key>ModifiedRange</key>
+			<string>{145, 834}</string>
+			<key>OriginalContent</key>
+			<string>show("What is your name?")
+
+let name = ask("Name")
+
+show("Hi " + name)
+</string>
+			<key>OriginalRange</key>
+			<string>{145, 71}</string>
+		</dict>
+	</array>
+	<key>File</key>
+	<string>Chapters/Answers.playgroundchapter/Pages/Text.playgroundpage/Contents.swift</string>
+</dict>
+</plist>
